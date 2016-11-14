@@ -20,10 +20,10 @@ public class FormularioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formulario_);
 
         Button botaoSalvar = (Button) findViewById(R.id.formulario_salvar);
-        botaoSalvar.setOnClickListener(new View.OnClickListener()  {
-            @Override
-            public void onClick (View v) {
-                Toast.makeText(FormularioActivity.this, "Botao clicado!", Toast.LENGTH_SHORT).show();
+        botaoSalvar.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                Toast.makeText(FormularioActivity.this, "Aluno salvo!", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 
